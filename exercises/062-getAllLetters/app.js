@@ -1,7 +1,10 @@
 function getAllLetters(str) {
     // your code here
-    
-    return str.split('')     
+    let array = []
+    str.split('').forEach((element, index) => {
+        array[index] = element
+    });
+    return array    
 }
 
 /** 
@@ -16,4 +19,6 @@ function getAllLetters(str) {
         array[start++] = element
     });
     return array
+    // SOLUCION 3
+    return str.split('')
 */
