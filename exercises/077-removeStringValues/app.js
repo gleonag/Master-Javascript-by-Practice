@@ -5,8 +5,15 @@ let obj = {
 
 function removeStringValues(obj) {
     // your code here
+    for(property in obj)
+    {
+        if (typeof(obj[property]) === 'string'){
+            
+            delete obj[`${property}`]    
+        }
+    } 
+    }
     
-}
 
-removeStringValues(obj);
-console.log(obj); // { age: 20 }
+removeStringValues(obj)
+console.log(obj)
